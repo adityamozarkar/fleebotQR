@@ -58,6 +58,7 @@
   <plugin name="cordova-plugin-statusbar" spec="~2.2.1"/>
   <plugin name="ionic-plugin-keyboard" spec="~2.2.1"/>
   <plugin name="phonegap-plugin-barcodescanner"/>
+  <plugin name="cordova-plugin-inappbrowser"/>
  
 <uses-sdk android:minSdkVersion="16" android:maxSdkVersion="23" />
 
