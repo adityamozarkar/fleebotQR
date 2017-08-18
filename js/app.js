@@ -33,8 +33,8 @@ angular.module('starter', ['ionic'])
         console.log(d)
         if (d) {
           $scope.qrcodedata = d.text;
-           $scope.qrurl += d.text;
-        window.open($scope.qrurl, "_blank");
+           //$scope.qrurl += d.text;
+        window.open($scope.qrcodedata + d.text, "_blank");
           $scope.$apply();
         }
       }, function (f) { console.log(f) }, function (f) { console.log(f) })
