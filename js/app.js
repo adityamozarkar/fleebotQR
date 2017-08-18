@@ -26,8 +26,8 @@ angular.module('starter', ['ionic'])
   .controller('BarcodeCtrl', function ($scope, $http) {
 
    
-    $scope.qrurl = "http://localhost:97/qr/pdi_incharge/checkbarcode.php?barcode=";
-    
+    //$scope.qrurl = "http://localhost:97/qr/pdi_incharge/checkbarcode.php?barcode=";
+    $scope.qrurl = "http://www.chw.vardhmanautomobile.com/pdi2/checkbarcode.php?barcode=";
     $scope.scan = function () {
       cordova.plugins.barcodeScanner.scan(function (d) {
         console.log(d)
