@@ -32,10 +32,10 @@ angular.module('starter', ['ionic'])
       cordova.plugins.barcodeScanner.scan(function (d) {
         console.log(d)
         if (d) {
-          $scope.qrcodedata = d.text;
-           //$scope.qrurl += d.text;
-        window.open($scope.qrcodedata + d.text, "_blank");
+          var url = $scope.qrurl + "" + d.text; 
           $scope.$apply();
+        window.open(url, "_blank");
+          
         }
       }, function (f) { console.log(f) }, function (f) { console.log(f) })
     };
